@@ -6,15 +6,12 @@ import java.util.Map;
 
 public class Criteria<E> {
 
-	private String productType;
-
 	private Map<E, Object> criteria = new HashMap<>();
 
-	private Class clazz;
+	private Class productType;
 
-	public Criteria(Class clazz) {
-		this.clazz = clazz;
-		productType = clazz.getSimpleName();
+	public Criteria(Class productType) {
+		this.productType = productType;
 	}
 
 	public void add(E searchCriteria, Object value) {
@@ -25,7 +22,7 @@ public class Criteria<E> {
 	}
 
 	public String getProductType() {
-		return productType;
+		return productType.getSimpleName();
 	}
 
 	public Map<E, Object> getCriteria() {

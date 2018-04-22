@@ -10,8 +10,6 @@ public class Laptop extends ApplianceProduct {
     private double cpu;
     private double displayInchs;
 
-    public Laptop(){}
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
