@@ -19,8 +19,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		Criteria<Oven> criteriaOven = new Criteria<Oven>();
-		criteriaOven.setProductType("Oven");
+		Criteria<Oven> criteriaOven = new Criteria<>(Oven.class);
 		criteriaOven.add(Oven.CAPACITY, 3);
 
 		products = service.find(criteriaOven);
@@ -29,8 +28,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		criteriaOven = new Criteria<Oven>();
-		criteriaOven.setProductType("Oven");
+		criteriaOven = new Criteria<>(Oven.class);
 		criteriaOven.add(Oven.HEIGHT, 200);
 		criteriaOven.add(Oven.DEPTH, 300);
 
@@ -40,8 +38,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		Criteria<TabletPC> criteriaTabletPC = new Criteria<TabletPC>();
-		criteriaTabletPC.setProductType("TabletPC");
+		Criteria<TabletPC> criteriaTabletPC = new Criteria<>(TabletPC.class);
 		criteriaTabletPC.add(TabletPC.COLOR, "BLUE");
 		criteriaTabletPC.add(TabletPC.DISPLAY_INCHES, 14);
 		criteriaTabletPC.add(TabletPC.MEMORY_ROM, 4);
@@ -52,8 +49,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		criteriaOven = new Criteria<Oven>();
-		criteriaOven.setProductType("Oven");
+		criteriaOven = new Criteria<>(Oven.class);
 		criteriaOven.add(Oven.HEIGHT, 45.5);
 		criteriaOven.add(Oven.DEPTH, 60);
 		criteriaOven.add(Oven.CAPACITY, 32);
@@ -64,8 +60,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		Criteria<VacuumCleaner> criteriaVacuumCleaner = new Criteria<>();
-		criteriaVacuumCleaner.setProductType("VacuumCleaner");
+		Criteria<VacuumCleaner> criteriaVacuumCleaner = new Criteria<>(VacuumCleaner.class);
 		criteriaVacuumCleaner.add(VacuumCleaner.BAG_TYPE, "aa-89");
 		criteriaVacuumCleaner.add(VacuumCleaner.MOTOR_SPEED_REGULATION, 2900);
 		criteriaVacuumCleaner.add(VacuumCleaner.FILTER_TYPE, "b");
@@ -76,8 +71,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		criteriaVacuumCleaner = new Criteria<>();
-		criteriaVacuumCleaner.setProductType("VacuumCleaner");
+		criteriaVacuumCleaner = new Criteria<>(VacuumCleaner.class);
 		criteriaVacuumCleaner.add(VacuumCleaner.BAG_TYPE, "XX00");
 		criteriaVacuumCleaner.add(VacuumCleaner.MOTOR_SPEED_REGULATION, 2950);
 		criteriaVacuumCleaner.add(VacuumCleaner.FILTER_TYPE, "C");
@@ -91,8 +85,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		criteriaTabletPC = new Criteria<>();
-		criteriaTabletPC.setProductType("TabletPC");
+		criteriaTabletPC = new Criteria<>(TabletPC.class);
 		criteriaTabletPC.add(TabletPC.COLOR, "RED");
 		criteriaTabletPC.add(TabletPC.DISPLAY_INCHES, 15);
 		criteriaTabletPC.add(TabletPC.MEMORY_ROM, "8000");
@@ -103,8 +96,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		Criteria<Speakers> criteriaSpeakers = new Criteria<>();
-		criteriaSpeakers.setProductType("Speakers");
+		Criteria<Speakers> criteriaSpeakers = new Criteria<>(Speakers.class);
 		criteriaSpeakers.add(Speakers.POWER_CONSUMPTION, 17);
 		criteriaSpeakers.add(Speakers.FREQUENCY_RANGE, "2-3.5");
 		criteriaSpeakers.add(Speakers.NUMBER_OF_SPEAKERS, "4");
@@ -115,8 +107,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		Criteria<Refrigerator> criteriaRefrigerator = new Criteria<>();
-		criteriaRefrigerator.setProductType("Refrigerator");
+		Criteria<Refrigerator> criteriaRefrigerator = new Criteria<>(Refrigerator.class);
 		criteriaRefrigerator.add(Refrigerator.POWER_CONSUMPTION, "200");
 		criteriaRefrigerator.add(Refrigerator.WEIGHT, 30);
 		criteriaRefrigerator.add(Refrigerator.HEIGHT, 180);
@@ -127,8 +118,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		Criteria<Laptop> criteriaLaptop = new Criteria<>();
-		criteriaLaptop.setProductType("Laptop");
+		Criteria<Laptop> criteriaLaptop = new Criteria<>(Laptop.class);
 		criteriaLaptop.add(null, null);
 		criteriaLaptop.add(Laptop.CPU, 2.2);
 
@@ -137,8 +127,7 @@ public class Main {
 		PrintProductInfo.print(products);
 		//////////////////////////////////////////////////////////////////
 
-		criteriaLaptop = new Criteria<>();
-		criteriaLaptop.setProductType("Laptop");
+		criteriaLaptop = new Criteria<>(Laptop.class);
 		criteriaLaptop.add(Laptop.OS,"Linux");
 		criteriaLaptop.add(Laptop.CPU, 2.2);
 
@@ -148,8 +137,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		Criteria<Newspaper> newspaperCriteriaLaptop = new Criteria<>();
-		newspaperCriteriaLaptop.setProductType("Newspaper");
+		Criteria<Newspaper> newspaperCriteriaLaptop = new Criteria<>(Newspaper.class);
 		newspaperCriteriaLaptop.add(Newspaper.PERIODICITY,"1x1");
 		newspaperCriteriaLaptop.add(Newspaper.PAID_OR_FREE, "paid");
 
@@ -159,8 +147,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		newspaperCriteriaLaptop = new Criteria<>();
-		newspaperCriteriaLaptop.setProductType("Newspaper");
+		newspaperCriteriaLaptop = new Criteria<>(Newspaper.class);
 		newspaperCriteriaLaptop.add(Newspaper.PERIODICITY,"1x1");
 		newspaperCriteriaLaptop.add(Newspaper.PAID_OR_FREE, "paid");
 		newspaperCriteriaLaptop.add(Newspaper.TITLE,"News");
@@ -171,8 +158,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		Criteria<TextBook> textBookCriteria = new Criteria<>();
-		textBookCriteria.setProductType("TextBook");
+		Criteria<TextBook> textBookCriteria = new Criteria<>(TextBook.class);
 		textBookCriteria.add(TextBook.AUTHOR,"Блинов");
 		textBookCriteria.add(TextBook.NUMBER_OF_PAGES, 669);
 
@@ -182,8 +168,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		textBookCriteria = new Criteria<>();
-		textBookCriteria.setProductType("TextBook");
+		textBookCriteria = new Criteria<>(TextBook.class);
 		textBookCriteria.add(TextBook.AUTHOR,"Блинов");
 		textBookCriteria.add(TextBook.NUMBER_OF_PAGES, 30);
 
@@ -193,8 +178,7 @@ public class Main {
 
 		//////////////////////////////////////////////////////////////////
 
-		textBookCriteria = new Criteria<>();
-		textBookCriteria.setProductType("TextBook");
+		textBookCriteria = new Criteria<>(TextBook.class);
 		textBookCriteria.add(TextBook.TITLE,"Почему это шедевр");
 		textBookCriteria.add(TextBook.SUBJECT, "познавательное");
 

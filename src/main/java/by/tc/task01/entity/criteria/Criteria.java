@@ -8,7 +8,14 @@ public class Criteria<E> {
 
 	private String productType;
 
-	private Map<E, Object> criteria = new HashMap<E, Object>();
+	private Map<E, Object> criteria = new HashMap<>();
+
+	private Class clazz;
+
+	public Criteria(Class clazz) {
+		this.clazz = clazz;
+		productType = clazz.getSimpleName();
+	}
 
 	public void add(E searchCriteria, Object value) {
 
@@ -19,10 +26,6 @@ public class Criteria<E> {
 
 	public String getProductType() {
 		return productType;
-	}
-
-	public void setProductType(String applianceType) {
-		this.productType = applianceType;
 	}
 
 	public Map<E, Object> getCriteria() {
