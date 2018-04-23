@@ -1,6 +1,8 @@
 package by.tc.task01.DAOTest;
 
 import static junit.framework.TestCase.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import by.tc.task01.entity.Product;
@@ -24,7 +26,7 @@ public class SearchTest {
         criteriaOven.add(SearchCriteria.Oven.WEIGHT, 10);
 
         products = service.find(criteriaOven);
-        assertTrue(products != null);
+        assertNotNull(products);
     }
 
     @Test
@@ -37,7 +39,7 @@ public class SearchTest {
         criteriaOven.add(SearchCriteria.Oven.WEIGHT, 5);
 
         products = service.find(criteriaOven);
-        assertFalse(products == null);
+        assertNotNull(products);
     }
 
     @Test
@@ -52,7 +54,7 @@ public class SearchTest {
         criteriaSpeackers.add(SearchCriteria.Speakers.POWER_CONSUMPTION, 15);
 
         products = service.find(criteriaSpeackers);
-        assertTrue(products != null);
+        assertNotNull(products);
     }
 
     @Test
@@ -66,6 +68,6 @@ public class SearchTest {
         criteriaTextBook.add(SearchCriteria.TextBook.TITLE, "Java");
 
         products = service.find(criteriaTextBook);
-        assertTrue(products != null);
+        assertNotNull(products);
     }
 }
