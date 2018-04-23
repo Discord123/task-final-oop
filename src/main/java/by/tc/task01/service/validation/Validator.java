@@ -18,7 +18,7 @@ public class Validator {
 				return false;
 			}
 		}
-		String productType = criteria.getProductType();
+		String productType = criteria.getProductTypeSimpleName();
 
 		Boolean validCriteria = checkExistingProductType(criteriaMap,productType);
 

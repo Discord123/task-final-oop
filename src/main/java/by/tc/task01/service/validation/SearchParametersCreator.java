@@ -10,7 +10,7 @@ public class SearchParametersCreator {
     public static <T> List<String> createSearchParameters(Criteria criteria){
         Map<T, Object> parametersMap = criteria.getCriteria();
         List<String> criteriaList = new ArrayList<>();
-        criteriaList.add(criteria.getProductType());
+        criteriaList.add(criteria.getProductTypeSimpleName());
         for (Map.Entry<T, Object> parameters : parametersMap.entrySet()){
             String type = parameters.getKey().toString();
             String value = parameters.getValue().toString();

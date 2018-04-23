@@ -21,11 +21,19 @@ public class Criteria<E> {
 		}
 	}
 
-	public String getProductType() {
+	public String getProductTypeSimpleName() {
 		return productType.getSimpleName();
 	}
 
 	public Map<E, Object> getCriteria() {
 		return criteria;
+	}
+
+	public Class getProductType() {
+		return productType;
+	}
+
+	public void setProductType(Class productType) {
+		this.productType = productType;
 	}
 }
