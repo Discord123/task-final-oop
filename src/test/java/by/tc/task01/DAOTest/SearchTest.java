@@ -16,7 +16,7 @@ import java.util.List;
 
 public class SearchTest {
     @Test
-    public void testOne() {
+    public void shouldReturnTrueWhenListHaveOneSpeaker() {
         List<Product> products;
 
         ServiceFactory factory = ServiceFactory.getInstance();
@@ -31,7 +31,7 @@ public class SearchTest {
     }
 
     @Test
-    public void testTwo() {
+    public void shouldReturnTrueWhenListHaveThreeProducts() {
         List <Product> products;
 
         ServiceFactory factory = ServiceFactory.getInstance();
@@ -45,7 +45,7 @@ public class SearchTest {
     }
 
     @Test
-    public void testThree() {
+    public void shouldReturnTrueWhenListHaveOneProduct() {
         List <Product> products;
 
         ServiceFactory factory = ServiceFactory.getInstance();
@@ -59,7 +59,7 @@ public class SearchTest {
     }
 
     @Test
-    public void testFour() {
+    public void shouldReturnTrueWhenListHaveOneLaptop() {
         List <Product> products;
 
         ServiceFactory factory = ServiceFactory.getInstance();
@@ -73,7 +73,7 @@ public class SearchTest {
     }
 
     @Test
-    public void testFive() {
+    public void shouldReturnTrueWhenTwoOvenSame() {
         Oven oven = new Oven();
         oven.setPowerConsumption(1000);
         oven.setWeight(10);
@@ -95,7 +95,7 @@ public class SearchTest {
     }
 
     @Test
-    public void testSix() {
+    public void shouldReturnTrueWhenTwoRefrigeratorSame() {
         Refrigerator refrigerator = new Refrigerator();
         refrigerator.setPowerConsumption(100);
         refrigerator.setWeight(20);
@@ -118,7 +118,7 @@ public class SearchTest {
     }
 
     @Test
-    public void testSeven() {
+    public void shouldReturnTrueWhenBothRefrigeratorSame() {
         Refrigerator refrigerator = new Refrigerator();
         refrigerator.setPowerConsumption(100);
         refrigerator.setWeight(20);
@@ -149,7 +149,7 @@ public class SearchTest {
     }
 
     @Test
-    public void testEight() {
+    public void shouldReturnNotNullWhenListHaveTextBook() {
         List<Product> products;
 
         ServiceFactory factory = ServiceFactory.getInstance();
@@ -164,7 +164,7 @@ public class SearchTest {
     }
 
     @Test
-    public void testNine() {
+    public void shouldReturnNotNullWhenListHaveOven() {
         List<Product> products;
 
         ServiceFactory factory = ServiceFactory.getInstance();
@@ -178,7 +178,7 @@ public class SearchTest {
     }
 
     @Test
-    public void testTen() {
+    public void shouldReturnNotNullWhenListHaveProduct() {
         List<Product> products;
 
         ServiceFactory factory = ServiceFactory.getInstance();
@@ -192,7 +192,7 @@ public class SearchTest {
     }
 
     @Test
-    public void testEleven() {
+    public void shouldReturnNotNullWhenListHaveSpeaker() {
         List<Product> products;
 
         ServiceFactory factory = ServiceFactory.getInstance();
