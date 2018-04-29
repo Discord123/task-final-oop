@@ -1,12 +1,21 @@
-package by.tc.task01.entity.paperProduct;
+package by.tc.task01.entity.paper_product;
 
-public class TextBook extends PaperProduct {
+import by.tc.task01.entity.Product;
+
+import java.io.Serializable;
+
+public class TextBook implements Product, Serializable {
+
+    private static final long serialVersionUID = -8180410463819157746L;
 
     private String name = "TextBook";
     private String title;
     private String subject;
     private String author;
     private double numberOfPages;
+
+    public TextBook() {
+    }
 
     public String getTitle() {
         return title;

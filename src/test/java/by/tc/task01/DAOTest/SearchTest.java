@@ -4,10 +4,10 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 import by.tc.task01.entity.Product;
-import by.tc.task01.entity.applianceProduct.*;
+import by.tc.task01.entity.appliance_product.*;
 import by.tc.task01.entity.criteria.Criteria;
 import by.tc.task01.entity.criteria.SearchCriteria;
-import by.tc.task01.entity.paperProduct.TextBook;
+import by.tc.task01.entity.paper_product.TextBook;
 import by.tc.task01.service.ProductService;
 import by.tc.task01.service.ServiceFactory;
 import org.junit.Test;

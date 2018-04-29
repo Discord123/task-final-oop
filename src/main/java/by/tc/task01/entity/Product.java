@@ -1,4 +1,4 @@
 package by.tc.task01.entity;
 
-public class Product {
+public interface Product {
 }

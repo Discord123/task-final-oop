@@ -1,11 +1,20 @@
-package by.tc.task01.entity.paperProduct;
+package by.tc.task01.entity.paper_product;
 
-public class Newspaper extends PaperProduct {
+import by.tc.task01.entity.Product;
+
+import java.io.Serializable;
+
+public class Newspaper implements Product, Serializable {
+
+    private static final long serialVersionUID = -1830436133822379731L;
 
     private String name = "Newspaper";
     private String title;
     private String periodicity;
     private String paidOrFree;
+
+    public Newspaper() {
+    }
 
     public String getTitle() {
         return title;

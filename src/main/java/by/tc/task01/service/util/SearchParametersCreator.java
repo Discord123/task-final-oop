@@ -1,4 +1,4 @@
-package by.tc.task01.service.validation;
+package by.tc.task01.service.util;
 
 import by.tc.task01.entity.criteria.Criteria;
 
